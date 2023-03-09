@@ -47,7 +47,7 @@ JavaScript Parser 是把 JavaScript 源码转化为抽象语法树的解析器
 - [astexplorer](https://astexplorer.net/)
 - AST 是深度优先遍历
 
-> src/01.js
+> src/01-esprima.js
 
 ```
 Program进入
@@ -172,3 +172,5 @@ const sum = function (a, b) {
   };
 };
 ```
+
+> src/02-arrow-0x.js
