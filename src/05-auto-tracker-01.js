@@ -17,6 +17,7 @@ const multiply = function(a,b){
   return a*b;
 }
 const minus = (a,b)=>a-b;
+
 class Calculator{
   divide(a,b){
     console.log('divide');

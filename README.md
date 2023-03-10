@@ -209,3 +209,7 @@ const sum = function (a, b) {
 
 > src/05-auto-tracker-01.js
 > src/plugins/auto-tracker-plugin
+
+## 5.8 eslint 插件
+
+- [rules](https://eslint.bootcss.com/docs/rules/)
