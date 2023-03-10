@@ -206,3 +206,6 @@ const sum = function (a, b) {
 - [babel-helper-module-imports](https://babeljs.io/docs/babel-helper-module-imports) 帮助插入模块
 - [@babel/template](https://babeljs.io/docs/babel-template) 根据字符串模板生成 AST 节点
 - state 用于在遍历过程中在 AST 节点之间传递数据的方式
+
+> src/05-auto-tracker-01.js
+> src/plugins/auto-tracker-plugin
