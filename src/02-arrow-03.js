@@ -21,6 +21,7 @@ let arrowFunctionPlugin = {
 
         // 新创建functionExpression并且替换
         // 能直接修改就直接修改，没必要重新创建后替换
+        t.functionExpression(id, params, body, generator, async)
         let functionExpression = t.functionExpression(id, params, blockStatement, generator, async)
         path.replaceWith(functionExpression)
       }

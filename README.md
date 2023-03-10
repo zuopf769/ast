@@ -185,7 +185,7 @@ const sum = function (a, b) {
 
 > src/03-classes-01.js
 
-## 5.6 实现日志插件
+### 5.6 实现日志插件
 
 给 console[log|info|error|warn|debugg]方法添加参数：文件 行号:列号
 
@@ -199,7 +199,7 @@ const sum = function (a, b) {
 
 > src/04-logger-01.js
 
-## 5.7 自动日志插件
+### 5.7 自动日志插件
 
 - [babel-helper-plugin-utils](https://babeljs.io/docs/babel-helper-plugin-utils)
 - [babel-types](https://babeljs.io/docs/babel-types.html#api) 用来生成节点和判断节点类型
@@ -210,7 +210,7 @@ const sum = function (a, b) {
 > src/05-auto-tracker-01.js
 > src/plugins/auto-tracker-plugin.js
 
-## 5.8 eslint 插件
+### 5.8 eslint 插件
 
 - [rules](https://eslint.bootcss.com/docs/rules/)
 
@@ -221,10 +221,26 @@ errors
 > src/06-eslint-01.js
 > src/eslint-plugin.js
 
-## 5.9 uglify
+### 5.9 uglify
 
 - [类型别名](https://github.com/babel/babel/blob/main/packages/babel-types/src/ast-types/generated/index.ts#L2225-L2244)
 - 类型别名就是多个类型用`|`链接，几个类型的集合，不用写一长串`|`了
 
 > src/07-uglify-01.js
 > src/uglify-plugin.js
+
+## 6 webpack 中使用 babel 插件
+
+### 6.1 实现按需加载
+
+- [lodashjs](https://www.lodashjs.com/)
+  - lodash 支持按需加载
+  - `var _ = require('lodash')` Load the full build.
+  - `var array = require('lodash/array')` 按目录加载，把数组的方法聚合到一个目录下
+  - `var toNumber = require('lodash/toNumber')` 按需加载
+- [babel-core](https://babeljs.io/docs/babel-core)
+- [babel-plugin-import](https://www.npmjs.com/package/babel-plugin-import)
+  - antd 组件的按需加载插件
+
+> src/08-webpack-babel-02.js
+> src/babel-plugin-import2.js
