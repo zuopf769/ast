@@ -208,8 +208,23 @@ const sum = function (a, b) {
 - state 用于在遍历过程中在 AST 节点之间传递数据的方式
 
 > src/05-auto-tracker-01.js
-> src/plugins/auto-tracker-plugin
+> src/plugins/auto-tracker-plugin.js
 
 ## 5.8 eslint 插件
 
 - [rules](https://eslint.bootcss.com/docs/rules/)
+
+errors
+
+![](https://raw.githubusercontent.com/retech-fe/image-hosting/main/img/2023/03/10/19-27-16-3e2955a84768ef7f2751e4fbf477f0ae-20230310192715-7adcd3.png)
+
+> src/06-eslint-01.js
+> src/eslint-plugin.js
+
+## 5.9 uglify
+
+- [类型别名](https://github.com/babel/babel/blob/main/packages/babel-types/src/ast-types/generated/index.ts#L2225-L2244)
+- 类型别名就是多个类型用`|`链接，几个类型的集合，不用写一长串`|`了
+
+> src/07-uglify-01.js
+> src/uglify-plugin.js

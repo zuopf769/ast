@@ -3,6 +3,7 @@ const eslintPlugin = ({ fix }) => {
   return {
     // babel插件特有的钩子
     pre(file) {
+      // 设置某个变量属性到file容器上底层是map
       file.set('errors', [])
     },
     visitor: {
@@ -25,7 +26,9 @@ const eslintPlugin = ({ fix }) => {
         }
       }
     },
+    // babel插件特有的钩子
     post(file) {
+      // 从file容器上底层是map取值
       console.log(...file.get('errors'))
     }
   }
