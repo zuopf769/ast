@@ -182,3 +182,19 @@ const sum = function (a, b) {
 ![](https://raw.githubusercontent.com/retech-fe/image-hosting/main/img/2023/03/10/10-44-23-d699e03cba09d9dc46fd15646d86ef6c-20230310104422-f519fe.png)
 
 ![](https://raw.githubusercontent.com/retech-fe/image-hosting/main/img/2023/03/10/10-47-23-601dd8e9ddaa3190281ef2e7419e91b3-20230310104722-4e9688.png)
+
+> src/03-classes-01.js
+
+## 5.6 实现日志插件
+
+给 console[log|info|error|warn|debugg]方法添加参数：文件 行号:列号
+
+```JavaScript
+{
+    loc: {
+        start: { line: 1, column: 1 }
+    }
+}
+```
+
+> src/04-logger-01.js
