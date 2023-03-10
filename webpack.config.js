@@ -15,6 +15,7 @@ module.exports = {
           options: {
             plugins: [
               [
+                // 编译顺序为首先plugins从左往右,然后presets从右往左
                 path.resolve(__dirname, 'src/plugins/babel-plugin-import.js'),
                 {
                   libraryName: 'lodash',

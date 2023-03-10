@@ -242,5 +242,20 @@ errors
 - [babel-plugin-import](https://www.npmjs.com/package/babel-plugin-import)
   - antd 组件的按需加载插件
 
+```JavaScript
+import { flatten, concat } from "lodash";
+```
+
+![](https://raw.githubusercontent.com/retech-fe/image-hosting/main/img/2023/03/10/20-28-46-2681844ddee7e9ea7b03c705fa2972d8-20230310202845-57b9a9.png)
+
+转换为
+
+```JavaScript
+import flatten from "lodash/flatten";
+import concat from "lodash/flatten";
+```
+
+![](https://raw.githubusercontent.com/retech-fe/image-hosting/main/img/2023/03/10/20-29-43-ed36b61bd9e002137775d6c23ae40c90-20230310202943-53c144.png)
+
 > src/08-webpack-babel-02.js
 > src/babel-plugin-import2.js
