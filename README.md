@@ -198,3 +198,11 @@ const sum = function (a, b) {
 ```
 
 > src/04-logger-01.js
+
+## 5.7 自动日志插件
+
+- [babel-helper-plugin-utils](https://babeljs.io/docs/babel-helper-plugin-utils)
+- [babel-types](https://babeljs.io/docs/babel-types.html#api) 用来生成节点和判断节点类型
+- [babel-helper-module-imports](https://babeljs.io/docs/babel-helper-module-imports) 帮助插入模块
+- [@babel/template](https://babeljs.io/docs/babel-template) 根据字符串模板生成 AST 节点
+- state 用于在遍历过程中在 AST 节点之间传递数据的方式
