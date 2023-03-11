@@ -51,6 +51,7 @@ const tscCheckPlugin = () => {
   }
 }
 
+// 泛型
 let sourceCode = `
   function join<T>(a:T,b:T):string{
       return a+b;

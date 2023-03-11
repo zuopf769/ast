@@ -33,6 +33,7 @@ const tscCheckPlugin = () => {
   }
 }
 
+// 赋值
 let sourceCode = `
   var age:number;
   age = "12";

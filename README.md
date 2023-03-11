@@ -262,4 +262,19 @@ import concat from "lodash/flatten";
 
 ## 7 tsc
 
-### 7.1
+- 赋值
+- 泛型
+- 泛型约束
+
+## 8 参考资料
+
+- [Babel 插件手册](https://github.com/brigand/babel-plugin-handbook/blob/master/translations/zh-Hans/README.md#asts)
+- [babel-types](https://github.com/babel/babel/tree/master/packages/babel-types)
+- [不同的 parser 解析 js 代码后得到的 AST](https://astexplorer.net/)
+- [在线可视化的看到 AST](https://www.jointjs.com/demos/abstract-syntax-tree)
+- [babel 从入门到入门的知识归纳](https://zhuanlan.zhihu.com/p/28143410)
+- [Babel 内部原理分析](https://zhuanlan.zhihu.com/p/412235767)
+- [babel-plugin-react-scope-binding](https://github.com/chikara-chan/babel-plugin-react-scope-binding)
+- [transform-runtime](https://www.npmjs.com/package/babel-plugin-transform-runtime) Babel 默认只转换新的 JavaScript 语法，而不转换新的 API。例如，Iterator、Generator、Set、+ Maps、Proxy、Reflect、Symbol、Promise 等全局对象，以及一些定义在全局对象上的方法（比如 Object.assign）都不会转译,+ 启用插件 `babel-plugin-transform-runtime` 后，Babel 就会使用 babel-runtime 下的工具函数
+- [ast-spec](https://github.com/babel/babylon/blob/master/ast/spec.md)
+- [babel-handbook](https://github.com/jamiebuilds/babel-handbook/blob/master/translations/zh-Hans/README.md)

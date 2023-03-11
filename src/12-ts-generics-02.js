@@ -84,6 +84,7 @@ const tscCheckPlugin = () => {
   }
 }
 
+// 泛型约束
 let sourceCode = `
     type Infer<K> = K extends 'number' ? number : string;
     function sum<T>(a: T, b: T) {
