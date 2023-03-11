@@ -259,3 +259,7 @@ import concat from "lodash/flatten";
 
 > src/08-webpack-babel-02.js
 > src/babel-plugin-import2.js
+
+## 7 tsc
+
+### 7.1

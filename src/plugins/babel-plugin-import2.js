@@ -22,6 +22,7 @@ const babelImportPlugin = opts => {
             //返回一个importDeclaration节点
             return types.importDeclaration(
               //导入声明importDefaultSpecifier flatten
+              // local是真正使用的导入内容，imported是导入之前的，可以as重命名
               [types.importDefaultSpecifier(specifier.local)],
               //导入模块source lodash/flatten
               types.stringLiteral(
